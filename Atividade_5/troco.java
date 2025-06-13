@@ -1,0 +1,28 @@
+package Atividade_5;
+
+import java.util.Scanner;
+
+public class troco {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Valor total da compra: ");
+        double vt = scanner.nextDouble();
+
+        System.out.print("Valor pago: ");
+        double vp = scanner.nextDouble();
+
+        System.out.print("---------------------\n");
+        System.out.printf("Valor da compra: %.2f\n", vt);
+        System.out.printf("Valor pago: %.2f\n", vp);
+
+        double v = vp - vt;
+        if (vp > vt) {
+            System.out.printf("Troco: %.2f\n", v);
+        }else {
+            System.out.print("Valor insuficiente");
+        }
+
+        scanner.close();
+    }
+}
